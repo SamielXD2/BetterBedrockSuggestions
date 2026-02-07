@@ -1,1 +1,7 @@
-
+name: BetterBedrockSuggestions
+version: 1.0.0
+main: com.bettersuggestions.BetterSuggestionsPlugin
+api-version: 1.19
+depend: [Geyser-Spigot]
+author: YourName
+description: Improved command suggestions for Bedrock players
