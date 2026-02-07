@@ -20,6 +20,10 @@
 
     <repositories>
         <repository>
+            <id>spigot-repo</id>
+            <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
+        </repository>
+        <repository>
             <id>opencollab-releases</id>
             <url>https://repo.opencollab.dev/maven-releases/</url>
         </repository>
@@ -30,6 +34,14 @@
     </repositories>
 
     <dependencies>
+        <!-- Spigot API -->
+        <dependency>
+            <groupId>org.spigotmc</groupId>
+            <artifactId>spigot-api</artifactId>
+            <version>1.20.1-R0.1-SNAPSHOT</version>
+            <scope>provided</scope>
+        </dependency>
+        
         <!-- Geyser API -->
         <dependency>
             <groupId>org.geysermc.geyser</groupId>
