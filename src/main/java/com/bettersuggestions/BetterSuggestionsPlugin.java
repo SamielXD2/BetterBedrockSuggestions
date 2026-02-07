@@ -1,18 +1,16 @@
 package com.bettersuggestions;
 
-import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import org.bukkit.event.EventHandler;
-import org.bukkit.event.Listener;
 import org.geysermc.geyser.api.GeyserApi;
 import org.geysermc.geyser.api.connection.GeyserConnection;
+import org.geysermc.geyser.api.event.EventRegistrar;
 import org.geysermc.geyser.api.event.bedrock.SessionLoginEvent;
 import org.geysermc.geyser.api.event.bedrock.SessionDisconnectEvent;
 
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
-public class BetterSuggestionsPlugin extends JavaPlugin implements Listener {
+public class BetterSuggestionsPlugin extends JavaPlugin implements EventRegistrar {
 
     private final Map<UUID, GeyserConnection> bedrockPlayers = new ConcurrentHashMap<>();
     private CommandRegistry commandRegistry;
