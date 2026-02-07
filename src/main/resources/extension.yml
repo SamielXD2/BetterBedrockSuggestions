@@ -1,8 +1,0 @@
-id: betterbedrocksuggestions
-name: BetterBedrockSuggestions
-main: com.bettersuggestions.BetterSuggestionsExtension
-version: 1.0.0
-api: 2.0.0
-authors:
-  - YourServer
-description: Improved command suggestions for Bedrock players
