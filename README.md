@@ -1,0 +1,2 @@
+# BetterBedrockSuggestions
+Better command suggestions 
