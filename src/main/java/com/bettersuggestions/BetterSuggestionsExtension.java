@@ -14,7 +14,6 @@ public class BetterSuggestionsExtension implements Extension {
     private final Map<UUID, GeyserConnection> bedrockPlayers = new ConcurrentHashMap<>();
     private CommandRegistry commandRegistry;
 
-    @Override
     public void onEnable() {
         this.commandRegistry = new CommandRegistry(this);
         commandRegistry.loadDefaultCommands();
@@ -48,7 +47,6 @@ public class BetterSuggestionsExtension implements Extension {
         return commandRegistry;
     }
 
-    @Override
     public void onDisable() {
         this.logger().info("Better Bedrock Suggestions disabled!");
     }
